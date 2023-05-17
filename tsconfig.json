@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "sourceMap": true,
+      "emitDecoratorMetadata": true,
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "forceConsistentCasingInFileNames": true,
+      "importHelpers": true,
+      "lib": ["ES2020", "dom"],
+      "module": "CommonJS",
+      "resolveJsonModule": true,
+      "moduleResolution": "node",
+      "noImplicitAny": true,
+      "outDir": "dist",
+      "removeComments": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "strictNullChecks": true,
+      "baseUrl": "./src",
+      "paths": {
+        "@src/*": ["./*"],
+        "@modules/*": ["./modules/*"],
+        "@actions/*": ["actions"],
+        "@projects/*": ["projects"],
+        "@tasks/*": ["tasks"],
+        "@helpers/*": ["helpers/*"],
+        "@config/*": ["config/*"],
+        "@builder/*": ["builder/*"],
+        "@services/*": ["services/*"]
+      },
+      "target": "ES2020",
+      "typeRoots": ["node_modules/@types"],
+      "types": ["node"]
+    },
+    "include": ["./src/**/*.ts"],
+    "exclude": ["./src/public/"]
+  }
+  
